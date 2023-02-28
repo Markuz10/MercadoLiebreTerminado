@@ -20,4 +20,6 @@ app.get("/",(req,res)=>{
 })
 
 
-app.listen(3020,console.log("Servidor ok"));
+app.listen(port,console.log("Servidor ok"));
+
+const port = process.env.PORT ||3020;
